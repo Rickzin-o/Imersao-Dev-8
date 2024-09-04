@@ -38,14 +38,18 @@ h1 {
 
 /* Estiliza as seções da página */
 section {
-    display: flex; /* Usa Flexbox para layout */
+    display: flex; /* Usa Flexbox para layout */;
     flex-direction: column; /* Alinha os itens na vertical */
     align-items: center; /* Centraliza os itens horizontalmente */
     margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
 }
 
+section div {
+    width: 40%;
+}
+
 /* Estiliza os inputs dentro das seções */
-main input {
+section input {
     width: 30rem; /* Largura dos inputs */
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
@@ -58,7 +62,7 @@ main input {
 }
 
 /* Estiliza os botões dentro das seções */
-main button {
+section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 1.5rem; /* Borda arredondada */
@@ -71,7 +75,7 @@ main button {
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
-main button:hover {
+section button:hover {
     background-color: var(--indigo-dye); /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
     opacity: 80%;
@@ -80,6 +84,11 @@ main button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
     width: 60rem; /* Largura máxima da caixa de resultados */
     height: 46vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
@@ -90,6 +99,8 @@ main button:hover {
 
 /* Estiliza cada item de resultado */
 .item-resultado {
+    display: inline-block;
+    width: 45%;
     background: #FFFFFF; /* Cor de fundo dos itens */
     border-radius: 0.6rem; /* Borda arredondada */
     padding: 1rem; /* Espaçamento interno */
