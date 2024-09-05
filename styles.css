@@ -155,6 +155,19 @@ footer {
     font-size: 1rem; /* Tamanho da fonte */
 }
 
+dialog {
+    max-width: 40%;
+}
+
+dialog img {
+    width: 100%;
+}
+
+dialog::backdrop {
+    background-color: var(--jet);
+    opacity: 20%;
+}
+
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
