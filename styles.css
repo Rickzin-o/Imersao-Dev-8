@@ -192,6 +192,10 @@ dialog::backdrop {
     .item-resultado h2 {
         font-size: 1.3rem; /* Tamanho da fonte dos títulos em telas menores */
     }
+    
+    dialog {
+        max-width: 60%;
+    }
 }
 
 /* Responsividade para celulares */
@@ -221,6 +225,10 @@ dialog::backdrop {
     }
 
     footer {
-        font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
+        font-size: 0.7rem; /* Tamanho da fonte do rodapé em telas pequenas */
+    }
+
+    dialog {
+        width: 80%;
     }
 }
