@@ -162,6 +162,10 @@ footer p {
 
 dialog {
     max-width: 40%;
+    color: var(--white);
+    background: linear-gradient(0deg, var(--jet) 40%, var(--indigo-dye) 100%);
+    border: solid 2px var(--platinum);
+    border-radius: 0.5rem;
 }
 
 dialog img {
@@ -170,7 +174,7 @@ dialog img {
 
 dialog::backdrop {
     background-color: var(--jet);
-    opacity: 20%;
+    opacity: 40%;
 }
 
 @media (max-width: 768px) {
