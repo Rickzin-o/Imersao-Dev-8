@@ -1,22 +1,26 @@
+var section_resultados = document.getElementById("resultados-pesquisa")
 var modal = document.querySelector("[data-modal]")
-var section_resultados = document.querySelector(".resultados-pesquisa")
+
+let resultados = ""
+// para cada dado dentro da lista de dados
+for (let dado of dados) {
+    let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>Gêneros: </strong>${dado.generos}</p></div>`
+
+    resultados += divJogo
+}
+
+section_resultados.innerHTML = resultados
 
 function openModal(jogo) {
-    dados.forEach(element => {
-            if (element.nome == jogo) {
-                let infosModal = `<img src=${element.imagem}"><p>${element.resumo}</p><p><strong>Desenvolvedor(es): </strong>${element.desenvolvedor}</p><p><strong>Gêneros: </strong>${element.generos}</p><button>Página da Steam</button>`
+    for (let dado of dados) {
+        if (dado.nome == jogo) {
+            let infosModal = `<img src=${dado.imagem}"><p>${dado.resumo}</p><p><strong>Desenvolvedor(es): </strong>${dado.desenvolvedor}</p><p><strong>Gêneros: </strong>${dado.generos}</p><button>Página da Steam</button>`
                 modal.innerHTML = infosModal
                 modal.showModal()
         }
-    });
+    };
 }
 
 modal.addEventListener("click", () => {
     modal.close()
 })
-
-for (let i = 0; i < dados.length; i++) {
-    let divJogo = `<div class="item-resultado"><img src=${dados[i].imagem} onclick="openModal('${dados[i].nome}')"><p><strong>Gêneros: </strong>${dados[i].generos}</p></div>`
-
-    section_resultados.innerHTML += divJogo
-}
