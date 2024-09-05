@@ -101,11 +101,23 @@ section button:hover {
 .item-resultado {
     display: inline-block;
     width: 45%;
-    background: #FFFFFF; /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
+    background: var(--caribbean-current); /* Cor de fundo dos itens */
+    color: var(--white);
+    border-radius: 1rem; /* Borda arredondada */
+    padding: 0 0 0.4rem 0; /* Espaçamento interno */
     margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+.item-resultado img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.item-resultado:hover {
+    transform: scale(1.05);
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
