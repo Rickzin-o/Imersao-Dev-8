@@ -39,9 +39,10 @@ h1 {
 /* Estiliza as seções da página */
 section {
     display: flex; /* Usa Flexbox para layout */;
-    flex-direction: column; /* Alinha os itens na vertical */
+    flex-direction: row; /* Alinha os itens na vertical */
+    justify-content: center;
     align-items: center; /* Centraliza os itens horizontalmente */
-    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    margin-bottom: 1.5rem; /* Espaçamento abaixo de cada seção */
 }
 
 section div {
@@ -54,7 +55,6 @@ section input {
     border: none; /* Remove a borda padrão */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 1.5rem; /* Borda arredondada */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
     background-color: var(--platinum);
     color: var(--jet); /* Cor do texto */
     font-size: 1rem; /* Tamanho da fonte */
@@ -89,12 +89,13 @@ section button:hover {
     text-align: center;
     justify-content: center;
     gap: 1rem;
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
+    width: 56rem; /* Largura máxima da caixa de resultados */
+    height: 48vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 0.5rem; /* Espaçamento interno */
+    border: solid 0.1rem var(--platinum);
+    border-radius: 1rem; /* Borda arredondada */
 }
 
 /* Estiliza cada item de resultado */
@@ -150,9 +151,13 @@ footer {
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
     width: 100%; /* Largura total da página */
-    position: absolute; /* Posiciona o rodapé */
+    /* position: absolute; Posiciona o rodapé */
     bottom: 0; /* Alinha ao fundo da página */
-    font-size: 1rem; /* Tamanho da fonte */
+    font-size: 0.8rem; /* Tamanho da fonte */
+}
+
+footer p {
+    margin: 1vh;
 }
 
 dialog {
