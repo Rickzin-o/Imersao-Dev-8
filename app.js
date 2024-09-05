@@ -1,15 +1,17 @@
 var section_resultados = document.getElementById("resultados-pesquisa")
 var modal = document.querySelector("[data-modal]")
 
-let resultados = ""
-// para cada dado dentro da lista de dados
-for (let dado of dados) {
-    let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>Gêneros: </strong>${dado.generos}</p></div>`
+function pesquisar() {
+    let resultados = ""
+    // para cada dado dentro da lista de dados
+    for (let dado of dados) {
+        let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>Gêneros: </strong>${dado.generos}</p></div>`
 
-    resultados += divJogo
+        resultados += divJogo
+    }
+
+    section_resultados.innerHTML = resultados
 }
-
-section_resultados.innerHTML = resultados
 
 function openModal(jogo) {
     for (let dado of dados) {
