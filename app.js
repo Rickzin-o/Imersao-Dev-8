@@ -16,7 +16,7 @@ function pesquisar() {
 function openModal(jogo) {
     for (let dado of dados) {
         if (dado.nome == jogo) {
-            let infosModal = `<img src=${dado.imagem}"><p>${dado.resumo}</p><p><strong>Ano de publicação: </strong>${dado.publicacao}</p><p><strong>Desenvolvedor(es): </strong>${dado.desenvolvedor}</p><p><strong>Gêneros: </strong>${dado.generos}</p><button>Página da Steam</button>`
+            let infosModal = `<img src=${dado.imagem}><p>${dado.resumo}</p><p><strong>Ano de publicação: </strong>${dado.publicacao}</p><p><strong>Desenvolvedor(es): </strong>${dado.desenvolvedor}</p><p><strong>Gêneros: </strong>${dado.generos}</p><button><a href="https://store.steampowered.com/search/?term=${dado.nome}" target="_blank">Pesquisar na Steam</a></button>`
                 modal.innerHTML = infosModal
                 modal.showModal()
         }
