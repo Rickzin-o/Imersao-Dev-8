@@ -3,17 +3,27 @@ var modal = document.getElementById("info-modal")
 var campoPesquisa = document.getElementById("campo-pesquisa")
 
 function pesquisar() {
-        let resultados = ""
-        // para cada dado dentro da lista de dados
-        for (let dado of dados) {
-            let pesquisa = campoPesquisa.value.trim().toLowerCase()
-            let nome = dado.nome.toLowerCase()
-            let generos = dado.generos.toLowerCase()
-            if (nome.includes(pesquisa) || generos.includes(pesquisa)) {
+    let pesquisa = campoPesquisa.value.trim().toLowerCase()
+    if (pesquisa == "" || pesquisa.length < 2) {
+        section_resultados.innerHTML = "Faça uma busca mais específica..."
+        return
+    }
+
+    let resultados = ""
+    // para cada dado dentro da lista de dados
+    for (let dado of dados) {
+        let nome = dado.nome.toLowerCase()
+        let generos = dado.generos.toLowerCase()
+        if (nome.includes(pesquisa) || generos.includes(pesquisa)) {
             let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>Gêneros: </strong>${dado.generos}</p></div>`
 
             resultados += divJogo
         }
+    }
+
+    if (resultados == "") {
+        section_resultados.innerHTML = "Nenhum resultado encontrado."
+        return
     }
 
     section_resultados.innerHTML = resultados
