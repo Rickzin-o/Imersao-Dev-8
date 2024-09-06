@@ -179,6 +179,35 @@ dialog::backdrop {
     opacity: 40%;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-container button {
+    padding: 1rem 0.5rem; /* Espaçamento interno do botão */
+    border: solid 1px var(--platinum); /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    width: 40%;
+    background-color: var(--indigo-dye); /* Cor de fundo do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: all 300ms;
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+.buttons-container button:hover {
+    background-color: var(--indigo-dye); /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra mais intensa */
+    opacity: 80%;
+    transform: scale(1.1);
+}
+
+.buttons-container a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 @media (max-width: 920px) {
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
@@ -209,7 +238,7 @@ dialog::backdrop {
         max-width: 60%;
     }
 
-    .resultados-pesquisa::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         visibility: hidden;
     }
 }
