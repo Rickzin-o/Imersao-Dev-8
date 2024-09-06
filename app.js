@@ -1,13 +1,19 @@
 var section_resultados = document.getElementById("resultados-pesquisa")
-var modal = document.querySelector("[data-modal]")
+var modal = document.getElementById("info-modal")
+var campoPesquisa = document.getElementById("campo-pesquisa")
 
 function pesquisar() {
-    let resultados = ""
-    // para cada dado dentro da lista de dados
-    for (let dado of dados) {
-        let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>Gêneros: </strong>${dado.generos}</p></div>`
+        let resultados = ""
+        // para cada dado dentro da lista de dados
+        for (let dado of dados) {
+            let pesquisa = campoPesquisa.value.trim().toLowerCase()
+            let nome = dado.nome.toLowerCase()
+            let generos = dado.generos.toLowerCase()
+            if (nome.includes(pesquisa) || generos.includes(pesquisa)) {
+            let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>Gêneros: </strong>${dado.generos}</p></div>`
 
-        resultados += divJogo
+            resultados += divJogo
+        }
     }
 
     section_resultados.innerHTML = resultados

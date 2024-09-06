@@ -13,7 +13,7 @@
     </header>
     <main>
         <section>
-            <input placeholder="Digite um nome de um jogo ou desenvolvedor">
+            <input placeholder="Digite um nome de um jogo ou gênero" id="campo-pesquisa">
             <button onclick="pesquisar()">Pesquisar</button>
         </section>
         <section class="resultados-pesquisa" id="resultados-pesquisa">
@@ -23,12 +23,7 @@
         <p>&copy; 2024 - Indie Compass. Todos os direitos reservados</p>
         <p>Entre em contato: xxx@gmail.com</p>
     </footer>
-    <dialog data-modal>
-        <p>Descrição do jogo</p>
-        <p><strong>Desenvolvedor(es): </strong></p>
-        <p><strong>Gêneros: </strong></p>
-        <button>Página da Steam</button>
-    </dialog>
+    <dialog id="info-modal"></dialog>
     <script src="dados.js"></script>
     <script src="app.js"></script>
 </body>
