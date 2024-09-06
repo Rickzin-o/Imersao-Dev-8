@@ -13,6 +13,10 @@
 /* Estiliza o corpo da página */
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-image: url("https://i.redd.it/zjqz7z8xlk161.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: var(--jet); /* Cor de fundo da página */
     display: flex; /* Usa Flexbox para layout */
     flex-direction: column; /* Alinha os itens na vertical */
@@ -42,7 +46,7 @@ section {
     flex-direction: row; /* Alinha os itens na vertical */
     justify-content: center;
     align-items: center; /* Centraliza os itens horizontalmente */
-    margin-bottom: 1.5rem; /* Espaçamento abaixo de cada seção */
+    margin-bottom: 1.2rem; /* Espaçamento abaixo de cada seção */
 }
 
 section div {
@@ -84,6 +88,7 @@ section button:hover {
 
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
+    background-color: var(--jet);
     display: flex;
     flex-flow: row wrap;
     text-align: center;
@@ -94,6 +99,7 @@ section button:hover {
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
     padding: 0.5rem; /* Espaçamento interno */
+    padding-top: 1.5rem;
     border: solid 0.1rem var(--platinum);
     border-radius: 1rem; /* Borda arredondada */
     color: var(--white);
@@ -208,6 +214,19 @@ dialog::backdrop {
     color: var(--white);
 }
 
+.resultados-pesquisa::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.resultados-pesquisa::-webkit-scrollbar-track {
+    border-radius: 2rem;
+}
+
+.resultados-pesquisa::-webkit-scrollbar-thumb {
+    background: var(--platinum);
+    border-radius: 1rem;
+}
+
 @media (max-width: 920px) {
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
@@ -222,12 +241,14 @@ dialog::backdrop {
     .resultados-pesquisa {
         width: 40rem; /* Largura da caixa de resultados em telas menores */
         height: 44vh; /* Altura da caixa de resultados em telas menores */
+        padding: 0.5rem;
+        padding-top: 0.7rem;
     }
 
     .item-resultado {
         max-width: 40%;
-        padding: 0 0 0.3rem 0;
-        margin-bottom: 0.3rem;
+        padding: 0 0 0.1rem 0;
+        margin-bottom: 0.25rem;
     }
 
     .item-resultado h2 {
@@ -245,6 +266,9 @@ dialog::backdrop {
 
 /* Responsividade para celulares */
 @media (max-width: 480px) {
+    body {
+        background-image: url("https://i.pinimg.com/736x/20/5d/7d/205d7d3311e02fc638e1115247d8cdf2.jpg");
+    }
 
     h1 {
         font-size: 1.8rem; /* Tamanho da fonte em telas pequenas */
