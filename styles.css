@@ -88,7 +88,7 @@ section button:hover {
     flex-flow: row wrap;
     text-align: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 56rem; /* Largura máxima da caixa de resultados */
     height: 48vh; /* Altura máxima da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
@@ -96,6 +96,7 @@ section button:hover {
     padding: 0.5rem; /* Espaçamento interno */
     border: solid 0.1rem var(--platinum);
     border-radius: 1rem; /* Borda arredondada */
+    color: var(--white);
 }
 
 /* Estiliza cada item de resultado */
@@ -146,6 +147,7 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
+    margin-top: auto;
     background-color: var(--indigo-dye); /* Cor de fundo do rodapé */
     color: var(--white); /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
@@ -177,7 +179,7 @@ dialog::backdrop {
     opacity: 40%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     h1 {
         font-size: 2rem; /* Tamanho da fonte em telas menores */
         letter-spacing: 0.2rem; /* Espaçamento entre letras em telas menores */
@@ -190,7 +192,13 @@ dialog::backdrop {
 
     .resultados-pesquisa {
         width: 40rem; /* Largura da caixa de resultados em telas menores */
-        height: 40vh; /* Altura da caixa de resultados em telas menores */
+        height: 44vh; /* Altura da caixa de resultados em telas menores */
+    }
+
+    .item-resultado {
+        max-width: 40%;
+        padding: 0 0 0.3rem 0;
+        margin-bottom: 0.3rem;
     }
 
     .item-resultado h2 {
@@ -199,6 +207,10 @@ dialog::backdrop {
     
     dialog {
         max-width: 60%;
+    }
+
+    .resultados-pesquisa::-webkit-scrollbar {
+        visibility: hidden;
     }
 }
 
