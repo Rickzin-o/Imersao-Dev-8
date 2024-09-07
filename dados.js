@@ -63,5 +63,69 @@ let dados = [
         generos: "Ação, Plataforma, Aventura",
         publicacao: 2019,
         resumo: "Katana Zero é um jogo de ação frenético com elementos de neo-noir. Manipule o tempo, desvie de balas e elimine seus inimigos com precisão em níveis desafiadores."
+    },
+    {
+        nome: "Rocket League",
+        imagem: "https://cdn2.steamgriddb.com/grid/0bc7514855017a9c038a88c0a62403b4.jpg",
+        desenvolvedor: "Psyonix Studios",
+        generos: "Esporte, Veicular, Multijogador",
+        publicacao: 2015,
+        resumo: "Rocket League é um jogo de futebol com carros, onde você usa seus veículos para marcar gols em partidas frenéticas e cheias de acrobacias. Com física realista e jogabilidade viciante, o jogo oferece horas de diversão solo ou com amigos."
+    },
+    {
+        nome: "Rhythm Doctor",
+        imagem: "https://shared.steamstatic.com/store_item_assets/steam/apps/774181/header.jpg?t=1720154874",
+        desenvolvedor: "3DClouds",
+        generos: "Ritmo, Música",
+        publicacao: 2018,
+        resumo: "Rhythm Doctor é um jogo rítmico desafiador onde você precisa realizar procedimentos médicos no ritmo da música. Com uma trilha sonora original e viciante, o jogo testa seus reflexos e senso de ritmo."
+    },
+    {
+        nome: "Dont Starve",
+        imagem: "https://cdn2.steamgriddb.com/grid/9e05fb01c4c2aa78872ff38b73e69197.png",
+        desenvolvedor: "Klei Entertainment",
+        generos: "Sobrevivência, Aventura",
+        publicacao: 2013,
+        resumo: "Don't Starve é um jogo de sobrevivência em mundo aberto onde você precisa coletar recursos, construir abrigos e criar ferramentas para sobreviver em um ambiente hostil e cheio de criaturas perigosas."
+    },
+    {
+        nome: "Super Chicken Jumper",
+        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/584640/header.jpg?t=1708609164",
+        desenvolvedor: "Sewer Cat",
+        generos: "Plataforma, Arcade",
+        publicacao: 2020,
+        resumo: "Super Chicken Jumper é um jogo de plataforma arcade com gráficos pixelados e jogabilidade viciante. Controle um frango superpoderoso e pule por diversos níveis desafiadores, coletando ovos e evitando obstáculos."
+    },
+    {
+        nome: "Shovel Knight",
+        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/589500/header.jpg?t=1701228316",
+        desenvolvedor: "Yacht Club Games",
+        generos: "Plataforma, Aventura, Retro",
+        publicacao: 2014,
+        resumo: "Shovel Knight é um jogo de plataforma 2D com estética retro que homenageia os clássicos da era 8 e 16 bits. Controle o cavaleiro Shovel Knight em sua jornada para resgatar sua amada e derrotar o mal."
+    },
+    {
+        nome: "Terraria",
+        imagem: "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
+        desenvolvedor: "Re-Logic",
+        generos: "Aventura, Construção, Sandbox",
+        publicacao: 2011,
+        resumo: "Terraria é um jogo de mundo aberto em 2D onde você pode construir, explorar e lutar contra monstros em um mundo gerado proceduralmente. Crie ferramentas, armas e construções para sobreviver e prosperar."
+    },
+    {
+        nome: "The Binding of Isaac: Rebirth",
+        imagem: "https://cdn2.steamgriddb.com/grid/53078424bffd4f61f37db5fc749e1afd.png", 
+        desenvolvedor: "Edmund McMillen",
+        generos: "Roguelike, Ação",
+        publicacao: 2014,
+        resumo: "The Binding of Isaac: Rebirth é um roguelike com elementos de RPG e ação. Explore as profundezas de uma masmorra gerada proceduralmente, enfrentando monstros bizarros e coletando itens para fortalecer seu personagem."
+    },
+    {
+        nome: "Chants of Sennaar",
+        imagem: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1931770/header.jpg?t=1723627319", 
+        desenvolvedor: "RUNDISC",
+        generos: "Quebra-cabeça, Aventura",
+        publicacao: 2020,
+        resumo: "Chants of Sennaar é um jogo de quebra-cabeça focado em linguística. Desvende os mistérios de uma torre antiga traduzindo idiomas desconhecidos e resolvendo enigmas para progredir na história."
     }
 ];

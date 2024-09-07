@@ -15,7 +15,7 @@ function pesquisar() {
         let nome = dado.nome.toLowerCase()
         let generos = dado.generos.toLowerCase()
         if (nome.includes(pesquisa) || generos.includes(pesquisa)) {
-            let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>Gêneros: </strong>${dado.generos}</p></div>`
+            let divJogo = `<div class="item-resultado" onclick="openModal('${dado.nome}')"><img src=${dado.imagem}><p><strong>${dado.generos}</strong></p></div>`
 
             resultados += divJogo
         }

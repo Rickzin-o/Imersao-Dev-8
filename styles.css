@@ -300,4 +300,8 @@ dialog::backdrop {
     dialog {
         width: 80%;
     }
+
+    ::-webkit-scrollbar {
+        visibility: hidden;
+    }
 }
