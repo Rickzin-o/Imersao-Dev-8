@@ -224,7 +224,7 @@ dialog::backdrop {
 
 .resultados-pesquisa::-webkit-scrollbar-thumb {
     background: var(--platinum);
-    border-radius: 1rem;
+    border-radius: 2rem;
 }
 
 @media (max-width: 920px) {
