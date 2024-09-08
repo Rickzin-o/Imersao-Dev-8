@@ -10,6 +10,8 @@ O projeto conta com os seguintes recursos:
 * Uma barra de pesquisa para procurar por jogos;
 * Uma pequena lista de jogos independentes e suas devidas informações, como gêneros e desenvolvedores;
 
+![Indie Compass](https://github.com/user-attachments/assets/a9e9c28c-a173-4dba-8419-6227bf67c796)
+
 ## Como acessar o projeto 🤔
 
 A página está hospedada no Github Pages, você pode a acessar [clicando aqui](https://rickzin-o.github.io/Indie-Compass/).
